@@ -2,7 +2,6 @@ import { useRef, useState } from 'react';
 import WebcamView from '../../molecules/WebcamView/WebcamView';
 import Button from '../../atoms/Button/Button';
 import styles from './WebcamCapture.module.css';
-import NavbarComponent from '../Navbar/Navbar';
 
 const WebcamCapture = () => {
   const videoRef = useRef(null);
