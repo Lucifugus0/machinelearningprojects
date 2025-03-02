@@ -1,0 +1,8 @@
+.video {
+  width: 480px;
+  height: 300px;
+  border-radius: 10px; /* Membuat video lebih rounded */
+  overflow: hidden; /* Pastikan border-radius diterapkan */
+  object-fit: cover; /* Agar video tidak terdistorsi */
+  margin-top: 50px;
+}

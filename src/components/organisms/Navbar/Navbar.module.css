@@ -1,0 +1,30 @@
+/* NavbarComponent.module.css */
+.navbar {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Transparan sedikit */
+  padding: 15px 20px;
+  justify-content: flex-start;
+  position: fixed;
+}
+
+.navbar a {
+  color: #ffffff; /* Warna putih untuk teks agar kontras */
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #b0b0b0; /* Abu-abu muda saat hover */
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border: 1px solid #ffffff;
+}

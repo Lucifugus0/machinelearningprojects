@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import styles from './WebcamView.module.css';
 
 const WebcamView = ({ videoRef }) => {
   useEffect(() => {
@@ -12,7 +13,7 @@ const WebcamView = ({ videoRef }) => {
     }
   }, [videoRef]);
 
-  return <video ref={videoRef} autoPlay style={{ width: '100%', height: 'auto' }}></video>;
+  return <video ref={videoRef} autoPlay className={styles.video}></video>;
 };
 
 export default WebcamView;

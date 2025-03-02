@@ -1,6 +1,8 @@
 import { useRef, useState } from 'react';
 import WebcamView from '../../molecules/WebcamView/WebcamView';
 import Button from '../../atoms/Button/Button';
+import styles from './WebcamCapture.module.css';
+import NavbarComponent from '../Navbar/Navbar';
 
 const WebcamCapture = () => {
   const videoRef = useRef(null);
@@ -18,11 +20,18 @@ const WebcamCapture = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center', padding: '20px' }}>
+    <div className={styles.container}>
+      {/* Realtime Video */}
       <WebcamView videoRef={videoRef} />
-      <canvas ref={canvasRef} style={{ display: 'none' }} width="640" height="480"></canvas>
+
+      {/* Tombol Capture */}
       <Button onClick={captureImage}>Capture</Button>
-      {image && <img src={image} alt="Captured" style={{ marginTop: '20px', maxWidth: '100%' }} />}
+
+      {/* Hasil Gambar */}
+      {image && <img src={image} alt="Captured" className={styles.capturedImage}/>}
+
+      {/* Canvas (Hidden) */}
+      <canvas ref={canvasRef} style={{ display: 'none' }} width="640" height="480"></canvas>
     </div>
   );
 };
