@@ -1,7 +1,6 @@
 /* NavbarComponent.module.css */
 .navbar {
   width: 100%;
-  background: rgba(0, 0, 0, 0.8); /* Transparan sedikit */
   padding: 15px 20px;
   justify-content: flex-start;
   position: fixed;
