@@ -1,7 +1,6 @@
 import React from 'react';
 import WebcamCapture from '../organisms/WebcamCapture/WebcamCapture';
 import { useNavigate } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
 
 const CapturePage = ({ setCapturedImage }) => {
   const navigate = useNavigate();
